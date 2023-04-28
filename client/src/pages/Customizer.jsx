@@ -59,7 +59,7 @@ const Customizer = () => {
       // Call au backend pour générer l'image
       setGeneratingImg(true);
 
-      const response = await fetch("http://localhost:8080/api/v1/dalle", {
+      const response = await fetch("https://react-three-ai.onrender.com/api/v1/dalle", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
